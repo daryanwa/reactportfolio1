@@ -1,9 +1,11 @@
 .main__header {
     width: 100vw;
-    height: calc(100vh + 50rem);
+    height: calc(100vh + 50rem); 
+ 
     display: grid;
     place-items: center;
     margin-top: -25rem;
+    margin-bottom: -25rem;
 }
 
 
@@ -289,4 +291,156 @@ footer {
     padding: 1.5rem 0;
     border-top: 2px solid var(--color-primary-variant);
     margin-top: 5rem;
+ }
+
+
+
+ /* Media quueries (medium screens) */
+
+@media screen and (max-width: 1024px) {
+
+    /* main header */
+    .main__header {
+        height: fit-content;
+        padding: 35rem 0 0 0 ;
+        margin-bottom: -3rem;
+
+    }
+    
+
+    .main__header-container {
+        gap: 0;
+    }
+
+    .main__header-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+    .btn.lg {
+        position: absolute;
+        margin-top: -25px;
+        
+    }
+
+
+
+/* programs */
+
+.programs__wrapper {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* Values */
+.values__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4;
+}
+.values__wrapper{
+    gap: 4rem;
+}
+.values__image {
+    display: none;
+}
+/* FAQs */
+.faqs__wrapper {
+    grid-template-columns: 1fr;
+
+}
+/* Testimonials */
+.testimonials {
+    width: 100%;
+    
+}
+.testimonial__avatar{
+    right: 45%;
+}
+
+/* footer */
+.footer__container{
+    grid-template-columns: 1fr 1fr ;
+    gap: 4rem;
+
+}
+
+@media (max-width: 600px) {
+    body, html {
+        overflow-x: hidden;
+      }
+    }
+    
+
+
+}
+
+ /* Media quueries (medium screens) */
+
+ @media screen and (max-width: 600px) {
+
+    .main__header{
+        margin-top: 0;
+        padding: 12rem 0 0;
+        height: 100vh;
+    }
+
+    .main__header-image, .main__header-circle {
+        display: none;
+    }
+    .main__header-container{
+        grid-template-columns: 1fr;
+    }
+
+    .programs__wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+
+    }
+
+    .programs__program {
+        width: 84%;
+        margin: 0 auto;
+
+    }
+
+    .values__wrapper{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+    }
+    .card.values__value{
+        width: 84%;
+        margin-inline: auto;
+
+    }
+
+    .faqs__wrapper{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+
+    .testimonials {
+        width: 100%;
+
+    }
+    footer {
+        margin-top: 7rem;
+
+    }
+    .footer__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer__container article {
+        align-items: center;
+    }
+    .footer__container article p {
+        text-align: center;
+    }
+
+
  }
